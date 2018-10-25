@@ -33,7 +33,7 @@
     "browserify": "^10.2.4",
     "browserify-istanbul": "^2.0.0",
     "browserify-shim": "^3.8.9",
-    "canvas": "^1.6.6",
+    "canvas": "^1.6.11",
     "codecov": "^2.3.0",
     "copy-webpack-plugin": "^4.5.1",
     "eslint": "^2.8.0",

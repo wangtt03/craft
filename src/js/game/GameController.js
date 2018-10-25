@@ -99,6 +99,7 @@ class GameController {
     this.game.state.add('earlyLoad', {
       preload: () => {
         // don't let state change stomp essential asset downloads in progress
+        this.game.load.crossOrigin = "anonymous";
         this.game.load.resetLocked = true;
         this.assetLoader.loadPacks(this.earlyLoadAssetPacks);
       },
@@ -192,6 +193,7 @@ class GameController {
   }
 
   preload() {
+    this.game.load.crossOrigin = "anonymous";
     this.game.load.resetLocked = true;
     this.game.time.advancedTiming = this.DEBUG;
     this.game.stage.disableVisibilityChange = true;
@@ -199,6 +201,7 @@ class GameController {
   }
 
   create() {
+    this.game.load.crossOrigin = 'anonymous';
     this.levelView.create(this.levelModel);
     this.game.time.slowMotion = this.initialSlowMotion;
     this.addCheatKeys();
